@@ -1,8 +1,8 @@
 ---
 title: "Reproducible Research: Peer Assessment 1"
 output: 
-  html_document:
-    keep_md: true
+  html_document: 
+    keep_md: yes
 ---
 
 ## Loading all packages
@@ -46,7 +46,7 @@ For this part of the assignment, you can ignore the missing values in the datase
 df<- data.frame(steps.day = with(data2, tapply(steps, date, FUN=sum)))
 ```
 
-```{r, echo=TRUE, fig.show='hold'}
+```{r, hist1}
 ## Histogram of the total number of steps taken each day
 hist(df$steps.day, 
      main = "Total number of steps per day", 
@@ -72,7 +72,7 @@ df2<- data.frame(steps.int = with(data2, tapply(steps, interval, FUN=mean)))
 df2$interval<- rownames(df2)
 ```
 
-```{r, echo=TRUE, fig.show='hold'}
+```{r, plot1}
 plot(df2$interval, df2$steps.int, 
      type='l', 
      main="Average number of steps across all days", 
@@ -119,7 +119,7 @@ for (i in 1:nrow(data3)){
 df3<- data.frame(steps.day = with(data3, tapply(steps, date, FUN=sum)))
 ```
 
-```{r, echo=TRUE, fig.show='hold'}
+```{r, hist2}
 hist(df$steps.day, 
      main = "Total number of steps per day", 
      xlab = "Steps in a day")
@@ -166,7 +166,7 @@ df5<- data.frame(steps.int = with(data_weekend, tapply(steps, interval, FUN=mean
 df5$interval<- rownames(df5)
 ```
 
-```{r, echo=TRUE, fig.show='hold'}
+```{r, plot2}
 par(mfrow=c(2,1))
 plot(df5$interval, df5$steps.int, 
      type='l', 
