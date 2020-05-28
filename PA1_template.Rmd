@@ -72,7 +72,7 @@ df2<- data.frame(steps.int = with(data2, tapply(steps, interval, FUN=mean)))
 df2$interval<- rownames(df2)
 ```
 
-```{r, fig.show='hold'}
+```{r, echo=TRUE, fig.show='hold'}
 plot(df2$interval, df2$steps.int, 
      type='l', 
      main="Average number of steps across all days", 
@@ -147,7 +147,7 @@ data4$day<- weekdays(data4$date)
 
 day_label<- vector()
 for(i in 1:nrow(data4)){
-  if ( data4$day[i] == "sábado"){
+  if ( data4$day[i] == "sÃ¡bado"){
     day_label[i]<- "weekend"
   } else if ( data4$day[i] == "domingo") { 
     day_label[i]<- "weekend"
