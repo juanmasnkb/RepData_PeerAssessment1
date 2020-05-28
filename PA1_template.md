@@ -85,7 +85,7 @@ hist(df$steps.day,
      xlab = "Steps in a day")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
+![](PA1_template_files/figure-html/hist1-1.png)<!-- -->
 
 
 ```r
@@ -117,7 +117,7 @@ plot(df2$interval, df2$steps.int,
      ylab="Average number of steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
+![](PA1_template_files/figure-html/plot1-1.png)<!-- -->
 
 
 ```r
@@ -168,7 +168,7 @@ hist(df$steps.day,
      xlab = "Steps in a day")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-11-1.png)<!-- -->
+![](PA1_template_files/figure-html/hist2-1.png)<!-- -->
 
 
 ```r
@@ -228,4 +228,4 @@ plot(df4$interval, df4$steps.int,
      ylab="Average number of steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-14-1.png)<!-- -->
+![](PA1_template_files/figure-html/plot2-1.png)<!-- -->
